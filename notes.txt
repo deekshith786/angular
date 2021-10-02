@@ -50,4 +50,43 @@ Architechture summary:
 
 NOTE:
  In the src folder we have main.ts which is the entry point to our Angular application 
- We also have the app folder which contains the file app.module.ts which is the root module of our application and also app.component.ts root component 
+ We also have the app folder which contains the file app.module.ts which is the root module of our application and also app.component.ts root component.
+ The exection starts from the main.ts and there we start  our app module and inside that app component.
+
+Component:
+
+Making a new component and how to add a new component to our angular application.
+
+1. Template : which represends a view (HTML)
+2. Class: this contains code that supports the view (typesctipt)
+3. Metadata: info required to decisde to identify the class is an angular component or regular class (with a decotator)
+   decotator says that is it a angular component or a regular class
+
+
+* so to create a new component in the project we use the Command: "ng g c <nameOfComponent>"
+ explaination:ng g for generate c for component <componentName>
+
+* This command creates a component which includes the css, html and ts files.
+* This new component should also be added to our main component app.module.ts and it is automatically done by the Angular CLI.
+* Now the selector from the test.component.ts should be placed in the app.component.ts as it is the root component
+* Adding the app-test component as a child tag to the parent tag helps in rendering the required ui in from the child component.
+
+So the above instructions are one way to do the rendering as a custom html tag
+
+we can also do this using a class as follows:
+* Add a . in the selector name
+* Then instead of writing the custom HTML tag we can use a div to that div tag we can add a class "app-test".
+
+we can also do the same as follows:
+* Add a [] around the selector name
+* Then in the div directly use the selector as an attribute instead of the class.
+
+* So we have the templateURL in the test.component.ts which gets the html, now we can also inline the template in the same file itself
+ex: template:  '<div> Inline Template</div>'
+wa can also write multiple lines in the same template using backticks (key below the esc)
+eg: template:  `<div> Inline Template</div>
+              <h1>Multiple lines</h1>`,
+
+
+Next thing is styleUrls:
+* we need to make an array and again use the backticks and provide the styles.              
