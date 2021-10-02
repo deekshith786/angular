@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
     <h1>
       Welcome {{name}}
     </h1>
-    <button (click)="onClick($event)">Greet</button>
-    {{greeting}}
+    <input #myInput type="text">
+    <button (click)="logMessage(myInput)">Log</button>
   `,
   styles: [`
   
@@ -16,11 +16,8 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   public name = "deekshith";
-  public greeting= ""; 
-
-  onClick(event){
-    console.log(event);    
-    this.greeting = "welcome to code evolution"
+  logMessage(value: any){
+    console.log(value);    
   }
   constructor() { }
 
