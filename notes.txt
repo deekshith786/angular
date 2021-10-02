@@ -89,4 +89,9 @@ eg: template:  `<div> Inline Template</div>
 
 
 Next thing is styleUrls:
-* we need to make an array and again use the backticks and provide the styles.              
+* we need to make an array and again use the backticks and provide the styles.
+
+Interpolation:
+* It is nothing but binding of data from a class to template.
+* We can also perform the calulations, string concatinations, JS properties and methods (also custom methods declared by the user) in the template.
+* we cannot assign the variables inside the expression, cannot use global JS variables under the templates
