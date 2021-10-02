@@ -3,18 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-test',
   template: `
-        <h1>
-          Inside the test.component.ts so welcome {{name}}
-        </h1>
-        <h1>{{2+2}}</h1>
-        <h1>{{"welcome" + "codeEvolution"}}</h1>
-        <h1>{{name.length}}</h1>
-        <h1>{{name.toUpperCase()}}</h1>
-        <h1>{{greetUser()}}</h1>
-
-        // these are not possible
-        <h1>{{a=2+2}}</h1>
-        <h1>{{siteUrl}}</h1>
+    <h1>
+      Welcome {{name}}
+    </h1>
+    <input [id]="myId" type="text" value= "ram">
+    <input [disabled]= "isDisabled" [id]="myId" type="text" value= "ram">
+    <input bind-disabled= "isDisabled" [id]="myId" type="text" value= "ram">
+    // line 10 & 11 are both the same but just different way of representation
 
   `,
   styleUrls: ['./test.component.css']
@@ -22,12 +17,9 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   public name = "deekshith";
-  public siteUrl = window.location.href;
-
-  greetUser()
-  {
-    return "Greeting" + this.name;
-  }
+  public myId = "testId";
+  public isDisabled= false;
+  
   constructor() { }
 
   ngOnInit(): void {

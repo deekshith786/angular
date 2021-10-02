@@ -95,3 +95,7 @@ Interpolation:
 * It is nothing but binding of data from a class to template.
 * We can also perform the calulations, string concatinations, JS properties and methods (also custom methods declared by the user) in the template.
 * we cannot assign the variables inside the expression, cannot use global JS variables under the templates
+
+Attribute Vs Properties:
+* They are not same
+* Attribute intialize dom properties and values cannot be change
