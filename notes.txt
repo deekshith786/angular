@@ -1,0 +1,53 @@
+Getting Started with Angular:
+
+* It is a great framwork to build client side applications.
+* It is great for single page applications SPA's.
+* It has a modular approach
+* Re-useable code (because of modules).
+* Development quicker and easier
+* Unit testable
+* It is developed by Google and Microsoft.
+
+History:
+
+* It was first released in 2010 and again in 2016 and again in 2016 Dec  
+
+Installation:
+
+* The pre-requistites for getting-started with the Angular are:
+   - Node
+   - npm 
+   - Angular CLI
+   - Text Editor (VS Code)
+
+For installing Anular CLI referal link : https://angular.io/cli
+
+Getting started with the Angular project:
+
+* So after installing the Angular CLI and then lets start with creating the project.
+* Command used to create an Angular project is: "ng new <projectName>"
+* Then get inside the project and run: "ng serve"
+* After run the port 4200 in the browser "localhost:4200".
+
+Architechture:
+
+Modules:
+ The modules are nothing but few lines of code that can be imported and exported 
+ Root module(App module) is the basic which every angular project has.
+
+Components:
+ Each module is intern made up of components and services
+ A component controlls certain portion of the view on the browser
+ eg: component for nav, sidebar etc 
+ Every angular project has a main component called as root component(AppComponents)
+ All the other components will be nested inside this AppComponent.
+
+Architechture summary:
+ Angular App: has one or more modules.
+ Module: has one or more components and services(can be exported and imported whereever required inside the projects)
+ Components: has HTML + class
+ Services: business Logic of the application
+
+NOTE:
+ In the src folder we have main.ts which is the entry point to our Angular application 
+ We also have the app folder which contains the file app.module.ts which is the root module of our application and also app.component.ts root component 
