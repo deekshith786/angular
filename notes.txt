@@ -99,3 +99,8 @@ Interpolation:
 Attribute Vs Properties:
 * They are not same
 * Attribute intialize dom properties and values cannot be change
+
+
+Binding classes to HTML elements:
+
+class element binding either we can use attribe or class binding but both cannot be used together 

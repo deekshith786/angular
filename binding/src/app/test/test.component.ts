@@ -6,20 +6,38 @@ import { Component, OnInit } from '@angular/core';
     <h1>
       Welcome {{name}}
     </h1>
-    <input [id]="myId" type="text" value= "ram">
-    <input [disabled]= "isDisabled" [id]="myId" type="text" value= "ram">
-    <input bind-disabled= "isDisabled" [id]="myId" type="text" value= "ram">
-    // line 10 & 11 are both the same but just different way of representation
-
+    <h1 [class]="sucessClass">Deekshith </h1>
+    <h1 class="text-special" [class]="sucessClass">Deekshith </h1>
+    <h1 [class.text-danger]="hasError">Deekshith </h1>    
+    <h1 [ngClass]="messageClasses">Deekshith</h1>
   `,
-  styleUrls: ['./test.component.css']
+  styles: [`
+  .text-sucess {
+    color: green
+  }
+  .text-danger {
+    color: red
+  }
+  .text-special {
+    color: blue;
+    font-style: italic;
+  }
+  `]
 })
 export class TestComponent implements OnInit {
 
   public name = "deekshith";
-  public myId = "testId";
-  public isDisabled= false;
-  
+
+  // classs binding
+  public sucessClass = "text-sucess";
+  public hasError = false;
+  public isSpecial = true;
+  public messageClasses = {
+    "text-sucess": !this.hasError,
+    "text-danger": this.hasError,
+    "text-special": this.isSpecial
+  }
+ 
   constructor() { }
 
   ngOnInit(): void {
