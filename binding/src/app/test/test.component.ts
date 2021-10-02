@@ -6,9 +6,8 @@ import { Component, OnInit } from '@angular/core';
     <h1>
       Welcome {{name}}
     </h1>
-    <h1 [style.color]="hasError ? 'red' : 'green' ">Color Binding</h1>
-    <h1 [style.color]="highlightColor">Color Binding</h1>
-    <h1 [ngStyle]="titleStyles">Color Binding</h1>
+    <button (click)="onClick($event)">Greet</button>
+    {{greeting}}
   `,
   styles: [`
   
@@ -17,11 +16,11 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   public name = "deekshith";
-  public hasError = false;
-  public highlightColor = "blue";
-  public titleStyles = {
-    color:"grey",
-    fontStyle:"italic"
+  public greeting= ""; 
+
+  onClick(event){
+    console.log(event);    
+    this.greeting = "welcome to code evolution"
   }
   constructor() { }
 
