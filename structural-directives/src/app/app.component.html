@@ -1,6 +1,6 @@
 <div style="text-align:center">
   <h1>
-      Greetings from the App component
+    {{myName}}
   </h1>
 </div>
-<app-test></app-test>
+<app-test (childEvent)="name=$event" [parentData] = "name"></app-test>

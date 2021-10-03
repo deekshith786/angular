@@ -103,4 +103,12 @@ Attribute Vs Properties:
 
 Binding classes to HTML elements:
 
-class element binding either we can use attribe or class binding but both cannot be used together 
+class element binding either we can use attribe or class binding but both cannot be used together.
+
+Component Interaction:
+
+* Parent & Child components interaction(vise versa):
+ it can be done using input() and output() decorators.
+
+ Sending data from parent to child component :
+ 
