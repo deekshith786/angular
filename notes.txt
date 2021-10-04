@@ -142,3 +142,15 @@ RxJS:
 * Using the HTTP mechanism:
 - import the HttpClientModule in the app.module.ts
 - now we use get() method to fetch the data from the sever but as we dont have the server we get the data from a file inside the assest/data
+
+* Routing in Angular:
+ - generate a project with routing option
+      # for new project: ng new <projectName> --routing
+      # for existing project: create a newfile named app-routing.modules.ts and add the following code as shown in commit 
+ - generate components
+ - configure the routes
+ - add buttons and use directives to navigate
+
+ -New Angular application with rounting option 
+  - in the new project type command: ng g c department-list -it -is
+  - and also : ng g c employee -it -is
