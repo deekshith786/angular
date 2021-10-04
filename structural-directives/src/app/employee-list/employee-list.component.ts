@@ -1,27 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-employee-list',
   template: `
       <h1>Employee List</h1>
       <ul *ngFor="let employee of employees">
-          <li>{{employee.id}}</li>
+          <li>{{employee.name}}</li>
       </ul>
   `,
-  styleUrls: ['./employee-list.component.css']
+  styles: []
 })
 export class EmployeeListComponent implements OnInit {
 
-  public employees = [
-    {"id": 1, "name": "Andrew", "age": 30},
-    {"id": 2, "name": "Brandon", "age": 25},
-    {"id": 3, "name": "Christina", "age": 26},
-    {"id": 4, "name": "Elena", "age": 28}
-  ]
+  public employees: any[] = [];
 
-  constructor() { }
+  constructor(private _employeService: EmployeeService) { }
 
   ngOnInit(): void {
+    this.employees = this._employeService.getEmployees();
   }
 
 }

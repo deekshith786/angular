@@ -120,3 +120,10 @@ Component Interaction:
  - used to share data.
  - implement application logic.
  - external interaction.
+
+ * Dependancy Injection:
+  It is a design pattern in which a class receives its dependencies from external sources rather than creating them itself
+  Angular has a Dependancy Injection framwork which handles all the required dependencies for us using an injector
+
+  * Create a Service and use it:
+   To create a Servie we use command: ng g s <nameOfTheService>
