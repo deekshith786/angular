@@ -127,3 +127,18 @@ Component Interaction:
 
   * Create a Service and use it:
    To create a Servie we use command: ng g s <nameOfTheService>
+
+Http mechanism, Observables:
+ Observables are which that return an HTTP response that arrives asyncornosly.
+ Steps:
+ - HTTP Get request from EmpService.
+ - Receive the Observables and cast it into an employee array.
+ - Subsctibe to the Observables form Emplist and EmpDetail.
+ - Assign the employee array to a local variable
+
+RxJS:
+ It is an extenal libarary to work with Observables.
+
+* Using the HTTP mechanism:
+- import the HttpClientModule in the app.module.ts
+- now we use get() method to fetch the data from the sever but as we dont have the server we get the data from a file inside the assest/data
