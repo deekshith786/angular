@@ -110,5 +110,8 @@ Component Interaction:
 * Parent & Child components interaction(vise versa):
  it can be done using input() and output() decorators.
 
- Sending data from parent to child component :
- 
+ Sending data from parent to child component
+
+* Pipes:
+ Pipes allows us to transform data before displaying them in the view.
+  
