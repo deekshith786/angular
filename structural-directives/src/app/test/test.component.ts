@@ -21,7 +21,7 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   <h1>{{ 5.678 | currency: 'GBP' }}</h1>
   <h1>{{ 5.678 | currency: 'GBP' : 'code' }}</h1>
 
-  <h1>{{ date | date: }}</h1>
+  <h1>{{ date | date }}</h1>
   <h1>{{ date | date: 'short' }}</h1>
   <h1>{{ date | date: 'shortDate' }}</h1>
   <h1>{{ date | date: 'shortTime' }}</h1>

@@ -114,4 +114,9 @@ Component Interaction:
 
 * Pipes:
  Pipes allows us to transform data before displaying them in the view.
-  
+
+ * Services: 
+ It is a class with sepcific pupose
+ - used to share data.
+ - implement application logic.
+ - external interaction.
